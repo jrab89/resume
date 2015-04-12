@@ -29,6 +29,20 @@
   },
   "work": [
     {
+      "company": "Virtual Soldier Research",
+      "position": "Undergraduate Research Assistant",
+      "website": "http://www.ccad.uiowa.edu/vsr",
+      "startDate": "2011-11-01",
+      "endDate": "2013-05-01",
+      "summary": "Collaborated with a multidisciplinary research team developing Santos, a high fidelity digital human modeling tool",
+      "highlights": [
+        "Developed software for calcuating joint torques based on data from biomechanical research",
+        "Built GUIs for interacting with and visualizing data within Santos",
+        "Assisted in teaching a graduate course in predictive human modeling",
+        "Taught VSR’s class to train interns in C++, the DH convention, forward/inverse kinematics, optimization methods, GUI development"
+      ]
+    },
+    {
       "company": "Sebesta Blomberg",
       "position": "Engineering Intern",
       "website": "http://sebesta.com",
