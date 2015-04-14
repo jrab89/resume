@@ -32,10 +32,16 @@
       "company": "Pearson",
       "position": "Software Developer",
       "website": "http://www.pearson.com/",
-      "startDate": "2013-7-01",
-      "endDate": "2015-1-01",
+      "startDate": "2013-07-01",
+      "endDate": "2015-01-01",
       "summary": "",
-      "highlights": []
+      "highlights": [
+        "Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, MySQL/Percona clusters",
+        "Developed software using the AWS SDK for Ruby to automate the tracking and deletion of unitilized EC2 instances, EBS volumes, and ELBs",
+        "Using the Chef and AWS APIs, lead the development of a CLI to automate the provisioning, maintenance, reporting, and decomissioning of entire AWS environments",
+        "Developed software using the AWS SDK for Ruby to enforce multi-factor authentication and frequent API key rotation for AWS accounts",
+        "Developed software using the AWS SDK for Ruby to track and alert on AWS service usage limits"
+      ]
     },
     {
       "company": "Virtual Soldier Research",
