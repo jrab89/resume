@@ -36,12 +36,12 @@
       "endDate": "2015-01-01",
       "summary": "",
       "highlights": [
-        "Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, MySQL clusters",
+        "Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, and MySQL clusters",
         "Built automation using the AWS Ruby SDK to delete unitilized EC2 instances, EBS volumes, and ELBs",
-        "Using the Chef and AWS Ruby SDK, lead the development of a CLI tool to automate the provisioning, maintenance, reporting, and decomissioning of entire AWS enviornments conisting of over 1500 EC2 instances",
+        "Using Chef and the AWS Ruby SDK, lead the development of a CLI tool to automate the provisioning, maintenance, reporting, and decomissioning of entire AWS enviornments conisting of over 1500 EC2 instances",
         "Developed automation using the AWS Ruby SDK to enforce multi-factor authentication and API key rotation for AWS accounts",
-        "Developed automation the AWS Ruby SDK to track and alert on AWS service usage limits",
-        "Built real-time dashboards using Graphite, Grafana, Dashing, and Rundeck to visualize Jenkins build pipelines and perfomance metrics"
+        "Developed automation using the AWS Ruby SDK to track and alert on AWS service usage limits",
+        "Built real-time dashboards using Graphite, Grafana, Dashing, and Rundeck to visualize metrics from Jenkins CI pipelines, AWS, and Chef"
       ]
     },
     {
