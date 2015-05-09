@@ -34,7 +34,7 @@
       "website": "http://www.pearson.com/",
       "startDate": "2013-07-01",
       "endDate": "2015-01-01",
-      "summary": "",
+      "summary": "Built automation as part of a team that led a large software development organization into a DevOps model",
       "highlights": [
         "Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, and MySQL clusters",
         "Built automation using the AWS Ruby SDK to delete unitilized EC2 instances, EBS volumes, and ELBs",
