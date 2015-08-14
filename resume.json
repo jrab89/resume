@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Jeffrey Rabovsky",
-    "label": "",
-    "picture": "",
+    "label": "Software Engineer",
+    "picture": "http://jrab89.github.io/resume/Jeff_Rabovsky.jpg",
     "email": "jrab89@gmail.com",
     "phone": "",
-    "website": "",
-    "summary": "",
+    "website": "http://jrab89.github.io",
+    "summary": "I've been interested in building software since I was a teenager and have been doing so professionally since 2011. I studied Electrical Engineering at the University of Iowa, where I also ended up with minors in Math and Computer Science. I was really interested in microcontrollers, but since then I've mostly been doing other stuff. I enjoy reading about and experimenting with technology!",
     "location": {
       "address": "1555 N Dearborn",
       "postalCode": "60610",
