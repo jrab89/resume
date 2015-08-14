@@ -1,425 +1,1062 @@
-<!doctype html>
-<html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Jeffrey Rabovsky</title>
-
-	<style>
-	body {
-	background: #fff;
-	font: 16px 'Open Sans' Helvetica, Arial, sans-serif;
-	line-height: 1.4;
-	margin: 0 0;
-	margin-bottom: 100px;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeffrey Rabovsky</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- link rel="shortcut icon" href="favicon.ico" / -->
+    <style>
+      .relative {
+  position: relative;
 }
-em {
-	color: #999;
+.clear-margin {
+  margin: 0;
 }
-p {
-	line-height: 1.6;
-	font-size: 90%;
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.icon-left {
+  margin-right: 5px;
+}
+.icon-right {
+  margin-left: 5px;
+}
+.labels {
+  word-spacing: 5px;
+  line-height: 2;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+.clear-margin {
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
+}
+body {
+  font-family: 'Lato';
+  background: #f0f0f0;
+  color: #333333;
+}
+.main {
+  padding: 5px;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  min-height: 300px;
+  padding: 10px;
+}
+.card-nested {
+  min-height: 0;
+  margin-bottom: 10px;
+  border-width: 1px 0 0 0;
+}
+.card-nested:before,
+.card-nested:after {
+  content: " ";
+  display: table;
+}
+.card-nested:after {
+  clear: both;
+}
+@media (max-width: 480px) {
+  .card-nested {
+    padding: 5px 0;
+  }
+}
+.background-card {
+  padding: 10px 20px;
+}
+.card-wrapper {
+  padding: 5px;
+}
+@media (max-width: 992px) {
+  .card-wrapper {
+    float: none !important;
+  }
+}
+.text-bolder {
+  font-weight: bold;
+}
+.background-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.background-details .detail .icon {
+  min-width: 45px;
+  max-width: 45px;
+  text-align: center;
+}
+.background-details .detail .info {
+  width: 100%;
+}
+.background-details .detail .title,
+.background-details .detail .icon {
+  color: #707070;
+}
+.background-details .detail .mobile-title {
+  display: none;
+}
+@media (max-width: 480px) {
+  .background-details .detail .mobile-title {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
+.background-details .detail .icon,
+.background-details .detail .info {
+  display: table-cell;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .background-details .detail {
+    display: block;
+  }
+  .background-details .detail .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .detail .title {
+    display: none;
+  }
+}
+.info .content.has-sidebar {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #cdcdcd;
+}
+@media (max-width: 992px) {
+  .info .content.has-sidebar {
+    width: 100%;
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .info .content.has-sidebar {
+    padding: 0 2px;
+  }
+}
+.info .sidebar {
+  margin-left: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+}
+.current-event {
+  font-size: 8px;
+  color: #5ACE24;
+  position: absolute;
+  right: 100%;
+  top: 4px;
+  left: -10px;
+}
+/*
+    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
+*/
+.floating-nav-trigger {
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  background-color: white;
+  font-size: 1.5em;
+  color: #357ebd;
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.floating-nav-trigger .close-icon {
+  display: none;
+}
+.floating-nav-trigger:hover {
+  color: #1f496e;
+  background-color: #e6e6e6;
+  text-decoration: none;
+}
+.floating-nav-trigger.is-open {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.floating-nav-trigger.is-open .close-icon {
+  display: inherit;
+}
+.floating-nav-trigger.is-open .fa-bars {
+  display: none;
+}
+.floating-nav-trigger.is-open:hover {
+  background-color: white;
+}
+.floating-nav {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+  -o-transition: transform 0.3s, visibility 0s 0.3s;
+  transition: transform 0.3s, visibility 0s 0.3s;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  z-index: 50;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  visibility: hidden;
+  overflow: hidden;
+}
+.floating-nav ul {
+  font-size: 1.2em;
+  margin: 0;
+}
+.floating-nav ul li {
+  border-bottom: 1px solid #eff2f6;
+}
+.floating-nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #357ebd;
+  display: block;
+}
+.floating-nav ul li a:hover {
+  color: #1f496e;
+}
+.floating-nav ul li i.fa {
+  margin-right: 10px;
+}
+.floating-nav ul li:last-child {
+  border-bottom: 0;
+}
+.floating-nav.is-visible {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.3s, visibility 0s 0s;
+  -o-transition: transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+  visibility: visible;
+}
+@media (max-width: 992px) {
+  .profile-card-wrapper {
+    position: relative;
+  }
+}
+.profile-pic {
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .profile-pic {
+    padding: 10px 0;
+  }
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-details {
+    text-align: center;
+  }
+}
+.contact-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.contact-details .detail .icon {
+  padding: 0 10px;
+  color: #707070;
+}
+@media (max-width: 992px) {
+  .contact-details .detail .icon {
+    padding: 0 5px 0 0;
+  }
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.contact-details .detail .icon,
+.contact-details .detail .info {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-details .detail {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px;
+  }
+  .contact-details .detail .icon,
+  .contact-details .detail .info {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .contact-details .detail {
+    float: left;
+    width: 25%;
+  }
+}
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  margin-left: 5px;
+  min-width: 35px;
+  display: inline-block;
+}
+.social-link:first-child {
+  margin-left: 0;
+}
+.social-link:hover {
+  text-decoration: none;
+}
+.link-github {
+  color: #454545;
+}
+.link-github:hover,
+.link-github:focus {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.link-twitter {
+  color: #33ccff;
+}
+.link-twitter:hover,
+.link-twitter:focus {
+  text-decoration: none;
+  color: #00bfff;
+}
+.link-blog {
+  color: #f36f24;
+}
+.link-blog:hover,
+.link-blog:focus {
+  text-decoration: none;
+  color: #d8560c;
+}
+.link-linkedin {
+  color: #007bb6;
+}
+.link-linkedin:hover,
+.link-linkedin:focus {
+  text-decoration: none;
+  color: #005983;
+}
+.link-skype {
+  color: #12a5f4;
+}
+.link-skype:hover,
+.link-skype:focus {
+  text-decoration: none;
+  color: #0986ca;
+}
+.link-instagram {
+  color: #3f729b;
+}
+.link-instagram:hover,
+.link-instagram:focus {
+  text-decoration: none;
+  color: #305777;
+}
+.link-stackoverflow {
+  color: #8e8e92;
+}
+.link-stackoverflow:hover,
+.link-stackoverflow:focus {
+  text-decoration: none;
+  color: #747479;
+}
+.link-stackexchange {
+  color: #62b0df;
+}
+.link-stackexchange:hover,
+.link-stackexchange:focus {
+  text-decoration: none;
+  color: #389bd6;
+}
+.link-lastfm {
+  color: #d12127;
+}
+.link-lastfm:hover,
+.link-lastfm:focus {
+  text-decoration: none;
+  color: #a51a1f;
+}
+.link-soundcloud {
+  color: #e8822d;
+}
+.link-soundcloud:hover,
+.link-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.link-googleplus {
+  color: #dd4b39;
+}
+.link-googleplus:hover,
+.link-googleplus:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-youtube {
+  color: #dd4b39;
+}
+.link-youtube:hover,
+.link-youtube:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-pinterest {
+  color: #bd091f;
+}
+.link-pinterest:hover,
+.link-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.link-gratipay {
+  color: #663300;
+}
+.link-gratipay:hover,
+.link-gratipay:focus {
+  text-decoration: none;
+  color: #331a00;
+}
+.link-vimeo {
+  color: #17b3e8;
+}
+.link-vimeo:hover,
+.link-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.link-behance {
+  color: #2c98cf;
+}
+.link-behance:hover,
+.link-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.link-codepen {
+  color: #1c1c1c;
+}
+.link-codepen:hover,
+.link-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.link-foursquare {
+  color: #fa4778;
+}
+.link-foursquare:hover,
+.link-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.link-reddit {
+  color: #545454;
+}
+.link-reddit:hover,
+.link-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.link-spotify {
+  color: #acd200;
+}
+.link-spotify:hover,
+.link-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.link-tumblr {
+  color: #2d4661;
+}
+.link-tumblr:hover,
+.link-tumblr:focus {
+  text-decoration: none;
+  color: #1d2d3e;
+}
+.link-dribbble {
+  color: #ce366f;
+}
+.link-dribbble:hover,
+.link-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.link-facebook {
+  color: #4b6daa;
+}
+.link-facebook:hover,
+.link-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.link-angellist {
+  color: #000000;
+}
+.link-angellist:hover,
+.link-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-bitbucket {
+  color: #205081;
+}
+.link-bitbucket:hover,
+.link-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
+}
+.card-skills {
+  position: relative;
+}
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .profile-card {
+    text-align: center;
+  }
+  .profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .profile-pic img {
+    border-radius: 0;
+  }
+  .name-and-profession {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0;
+  }
+  .floating-nav,
+  .floating-nav-trigger {
+    display: none;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
 }
 
-a {
-	color: #2C85B1;
-	text-decoration: none;
-	font-weight: 400;
-}
-ul {
-	margin-bottom: 0;
-}
-section {
-	margin: 1em 0 2em;
-}
-blockquote {
-	margin: 0;
-	margin-bottom: 1em;
-}
-#resume {
-	margin: 2em 2em 2em 2.5em;
-	max-width: 760px;
-}
+    </style>
+  </head>
 
-/* Resume heading */
-.heading header { 
+  <body itemscope itemtype="http://schema.org/Person">
+    <script>
+      window.onload = function () {
+        var toggleFloatingMenu = function() {
+          $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+          $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+        };
 
-}
+        $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+        $( "[rel=tooltip]" ).tooltip();
+        $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+          e.preventDefault();
+          toggleFloatingMenu();
+        });
+        $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+      }
+    </script>
+    <div class="container-fluid">
+      <div class="row main clearfix">
+        <a href="#" class="js-floating-nav-trigger floating-nav-trigger">
+          <i class="fa fa-bars"></i>
+          <span class="close-icon">&times;</span>
+        </a>
+        <nav class="floating-nav js-floating-nav">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#about">
+                <i class="fa fa-user"></i>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#work-experience">
+                <i class="fa fa-building"></i>
+                Work Experience
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <i class="fa fa-code"></i>
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#education">
+                <i class="fa fa-mortar-board"></i>
+                Education
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-.heading header h1 {
-	font-size: 180%;
-	margin: 0.5em 0;
-	font-weight: 600;
-}
+        <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+          <div class="card profile-card">
+              <span class="profile-pic-container">
+                <div class="profile-pic">
+                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+                    alt="Jeffrey Rabovsky" src="http://jrab89.github.io/resume/Jeff_Rabovsky.jpg" itemprop="image">
+                </div>
 
-.heading header h2 {
-	font-size: 140%;
-	margin: 0;
-	font-weight: 400;
-}
+                <div class="name-and-profession">
+                  <h3 class="text-center text-bolder name" itemprop="name"> Jeffrey Rabovsky</h3>
+                  <h5 class="text-muted text-center" itemprop="jobTitle">Software Engineer</h5>
+                </div>
+              </span>
+              <hr>
 
-.heading header .contact .detail {
-	margin: 0 1em 0 0;
-}
+              <div class="contact-details clearfix">
 
-.profile {
-	display: inline-block;
-	margin: 0 1em 0 0;
-}
-
-.profile strong,
-.profile span {
-	display: inline-block;
-	margin: 0 1em 0 0;
-}
-/* section / line breaks */
-section h2 {
-	font-size: 140%;
-	margin: 0 0 1em;
-	text-transform: uppercase;
-	color: #BC1B39;
-	font-weight: 400;
-}
-
-/* Experience items */
-.item {
-	margin: 0 0 1em;
-	padding: 0 0 1em;
-	border-bottom: 1px solid #F2EBEC;
-}
-
-.item:last-child {
-	border-bottom: none;
-}
-
-
-.item header h3 {
-	margin: 0.2em 1em 0.2em 0;
-	display: inline-block;
-	font-weight: 600;
-}
-
-.item header a {
-	display: inline-block;
-}
-
-.item .position {
-	font-weight: 600;
-	font-size: 100%;
-	margin: 0.2em 1em 0.2em 0;
-}
-
-.item .startDate,
-.item .endDate {
-	color: #6B6B6B;
-}
-
-.item .highlights {
-	list-style: square;
-	font-size: 90%;
-}
-
-/* skills */
-#skills .item {
-	margin: 0.5em 0;
-	padding: 0 0 0.5em;
-	font-size: 90%;
-}
-
-#skills .item .name {
-	font-weight: 600;
-	display: inline-block;
-	text-transform: uppercase;
-	margin: 0 1em 0 0;
-	width: 23%;
-	vertical-align: top;
-}
-
-#skills .item .keywords {
-	display: inline-block;
-	width: 70%;
-	vertical-align: top;
-}
-
-/* education */
-#education .item {
-	display: inline-block;
-	vertical-align: top;
-	/*width: 49.5%;*/
-	border-bottom: 0;
-}
-
-/* education */
-#languages .item {
-	display: inline-block;
-	vertical-align: top;
-	width: 49.5%;
-	border-bottom: 0;
-}
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-location-arrow"></i>
+                    </span>
+                    <span class="info">
+                      Chicago, IL, US
+                    </span>
+                  </div>
 
 
-/* education */
-#nationality .item {
-	display: inline-block;
-	vertical-align: top;
-	border-bottom: 0;
-}
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-envelope"></i>
+                    </span>
 
-
-
-	</style>
-	<style media="print">
-		body { font-size: 12px; }
-	</style>
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
-	
-	</head>
-	<body>
-	
-	<div id="resume">
-
-	<section class="heading">
-		<header>
-			<h1>Jeffrey Rabovsky</h1>
-			<div class="contact">
-				<span class="detail">
-					<a href="/cdn-cgi/l/email-protection#d5bfa7b4b7edec95b2b8b4bcb9fbb6bab8"><span class="__cf_email__" data-cfemail="8ce6feedeeb4b5ccebe1ede5e0a2efe3e1">[email&#160;protected]</span><script cf-hash='f9e31' type="text/javascript">
+                    <span class="info">
+                      <a href="/cdn-cgi/l/email-protection#345e4655560c0d745359555d581a575b59" class="link-disguise" itemprop="email"><span class="__cf_email__" data-cfemail="046e7665663c3d446369656d682a676b69">[email&#160;protected]</span><script cf-hash='f9e31' type="text/javascript">
 /* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></a>
-				</span>
-			</div>
-		</header>
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-link"></i>
+                    </span>
+
+                    <span class="info">
+                      <a href="http://jrab89.github.io" target="_blank">http://jrab89.github.io</a>
+                    </span>
+                  </div>
+
+              </div>
+
+              <hr>
+
+              <div class="social-links text-center">
+                  <a class="fa fa-linkedin fa-2x social-link link-linkedin"
+                       href="http://www.linkedin.com/pub/jeffrey-rabovsky/5a/3b7/59" target="_blank"></a>
+                  <a class="fa fa-github fa-2x social-link link-github"
+                       href="//github.com/jrab89" target="_blank"></a>
+              </div>
+          </div>
+        </section>
+
+        <section class="col-md-9 card-wrapper pull-right">
+          <div class="card background-card">
+            <h4 class="text-uppercase text-bolder">Background</h4>
+            <hr>
+
+            <div class="background-details">
+              <div class="detail" id="about">
+                <div class="icon">
+                  <i class="fa fa-lg fa-user"></i>
+                  <span class="mobile-title">About</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    About
+                  </h4>
+
+                  <div class="content" itemprop="description">
+                    I&#x27;ve been interested in building software since I was a teenager and have been doing so professionally since 2011. I studied Electrical Engineering at the University of Iowa, where I also ended up with minors in Math and Computer Science. I was really interested in microcontrollers, but since then I&#x27;ve mostly been doing other stuff. I enjoy reading about and experimenting with technology!
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail" id="work-experience">
+                <div class="icon">
+                  <i class="fa fa-lg fa-building"></i>
+                  <span class="mobile-title">Work Experience</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Work Experience
+                  </h4>
+
+                  <ul class="list-unstyled">
+                      <li class="card card-nested clearfix">
+                        <div class="content">
+                          <p class="clear-margin relative">
+                            <strong>Associate</strong>,&nbsp;
+                              <a href="http://www.gcmlp.com/"  target="_blank">Grosvenor Capitol Management</a>
+                          </p>
+                          <p class="text-muted">
+                            <small>
+                              <span class="space-right">
+                                Jan, 2015 -
+                                  Aug, 2015
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  6 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Collaborated with development and operations teams to build automation and improve cloud infrastructure utilization</p>
+                            <ul>
+                                <li> Prototyped AWS DynamoDB as a more cost effective alternative to managed NoSQL databases </li>
+                                <li> Developed Chef cookbooks to automate the installation and configuration of IIS and ASP.NET MVC applications </li>
+                                <li> Using Sinatra and ruby-net-ldap, built an API and an accompanying CLI for managing Windows services on over 900 machines </li>
+                                <li> Wrote PowerShell scripts to automate monitoring configuration changes through Zenoss’ API </li>
+                                <li> Using the AWS Ruby SDK, built a CLI application to automate backups and tagging of EC2 instances </li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content">
+                          <p class="clear-margin relative">
+                            <strong>Software Developer</strong>,&nbsp;
+                              <a href="http://www.pearson.com/"  target="_blank">Pearson</a>
+                          </p>
+                          <p class="text-muted">
+                            <small>
+                              <span class="space-right">
+                                Jul, 2013 -
+                                  Jan, 2015
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  1 year 6 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Built automation as part of a team that led a large software development organization into a DevOps model</p>
+                            <ul>
+                                <li> Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, and MySQL </li>
+                                <li> Built automation using the AWS Ruby SDK to delete unitilized EC2 instances, EBS volumes, and ELBs </li>
+                                <li> Using Chef and the AWS Ruby SDK, lead the development of a CLI tool to automate the provisioning, maintenance, reporting, and decomissioning of entire AWS enviornments conisting of over 1500 EC2 instances </li>
+                                <li> Developed automation using the AWS Ruby SDK to enforce multi-factor authentication and API key rotation for AWS accounts </li>
+                                <li> Developed automation using the AWS Ruby SDK to track and alert on AWS service usage limits </li>
+                                <li> Built real-time dashboards using Graphite, Grafana, Dashing, and Rundeck to visualize metrics from Jenkins CI pipelines, AWS, and Chef </li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content">
+                          <p class="clear-margin relative">
+                            <strong>Undergraduate Research Assistant</strong>,&nbsp;
+                              <a href="http://www.ccad.uiowa.edu/vsr"  target="_blank">Virtual Soldier Research</a>
+                          </p>
+                          <p class="text-muted">
+                            <small>
+                              <span class="space-right">
+                                Nov, 2011 -
+                                  May, 2013
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  1 year 6 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Collaborated with a multidisciplinary research team developing Santos, a high fidelity digital human modeling tool</p>
+                            <ul>
+                                <li> Developed algorithms for calcuating joint torques based on data from biomechanical research </li>
+                                <li> Built GUIs for interacting with and visualizing data within Santos </li>
+                                <li> Assisted in teaching a graduate course in predictive human modeling </li>
+                                <li> Taught VSR’s class to train interns in C++, the DH convention, forward/inverse kinematics, optimization methods, GUI development </li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content">
+                          <p class="clear-margin relative">
+                            <strong>Engineering Intern</strong>,&nbsp;
+                              <a href="http://sebesta.com/"  target="_blank">Sebesta Blomberg</a>
+                          </p>
+                          <p class="text-muted">
+                            <small>
+                              <span class="space-right">
+                                Oct, 2010 -
+                                  Dec, 2010
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  2 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Conducted field verification and contributed to an engineering team to assist in the process of electrical systems commissioning</p>
+                            <ul>
+                                <li> Documented occupancy sensors, lighting fixtures, and electrical ballasts of 11 campus buildings in Iowa City </li>
+                                <li> Maintained communication with maintenance staff, management, and other project team members </li>
+                            </ul>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+
+                <div class="detail" id="skills">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-code"></i>
+                    <span class="mobile-title">Skills</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Skills
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Programming Languages</strong>
+
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">C</span>
+                                  <span class="label label-keyword">C++</span>
+                                  <span class="label label-keyword">Java</span>
+                                  <span class="label label-keyword">C#</span>
+                                  <span class="label label-keyword">JavaScript</span>
+                                  <span class="label label-keyword">Ruby</span>
+                                  <span class="label label-keyword">Go</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Frameworks</strong>
+
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">Ruby on Rails</span>
+                                  <span class="label label-keyword">Chef</span>
+                                  <span class="label label-keyword">Sinatra</span>
+                                  <span class="label label-keyword">AngularJS</span>
+                                  <span class="label label-keyword">Bootstrap</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Technologies</strong>
+
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">Amazon Web Services</span>
+                                  <span class="label label-keyword">Heroku</span>
+                                  <span class="label label-keyword">CentOS</span>
+                                  <span class="label label-keyword">Ubuntu</span>
+                                  <span class="label label-keyword">Windows Server</span>
+                                  <span class="label label-keyword">Nginx</span>
+                                  <span class="label label-keyword">CouchDB</span>
+                                  <span class="label label-keyword">DynamoDB</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="card card-nested card-skills">
+                            <div class="skill-info">
+                              <strong>Tools</strong>
+
+                              <div class="space-top labels">
+                                  <span class="label label-keyword">Git</span>
+                                  <span class="label label-keyword">Subversion</span>
+                                  <span class="label label-keyword">Bash</span>
+                                  <span class="label label-keyword">PowerShell</span>
+                                  <span class="label label-keyword">Vagrant</span>
+                                  <span class="label label-keyword">Graphite</span>
+                                  <span class="label label-keyword">Jenkins</span>
+                                  <span class="label label-keyword">Rundeck</span>
+                                  <span class="label label-keyword">Zenoss</span>
+                              </div>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="detail" id="education">
+                <div class="icon">
+                  <i class="fa fa-lg fa-mortar-board"></i>
+                  <span class="mobile-title">Education</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Education
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested">
+                          <div class="content">
+                            <p class="clear-margin relative">
+
+                              <strong>Electrial Engineering, BSE</strong>,&nbsp;
+                              University of Iowa
+                            </p>
+                            <p class="text-muted">
+                              <small>
+                                Aug, 2008 -
+                                  May, 2013
+                              </small>
+                            </p>
+                            <i></i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
 
 
-			<div class="profile">
-				<strong class="network">
-					GitHub
-				</strong>
-				<span class="username">
-					<a href="http://github.com/jrab89">jrab89</a>
-				</span>
-			</div>
-			<div class="profile">
-				<strong class="network">
-					LinkedIn
-				</strong>
-				<span class="username">
-					<a href="http://www.linkedin.com/pub/jeffrey-rabovsky/5a/3b7/59">Jeffrey Rabovsky</a>
-				</span>
-			</div>
-
-	</section>
-
-	<section id="skills">
-		<h2>Skills</h2>
-		<div class="item">
-			<div class="name">
-				Programming Languages
-			</div>
-			<div class="keywords">
-					C,
-					C++,
-					Java,
-					C#,
-					JavaScript,
-					Ruby,
-					Go
-			</div>
-		</div>
-		<div class="item">
-			<div class="name">
-				Frameworks
-			</div>
-			<div class="keywords">
-					Ruby on Rails,
-					Chef,
-					Sinatra,
-					AngularJS,
-					Bootstrap
-			</div>
-		</div>
-		<div class="item">
-			<div class="name">
-				Technologies
-			</div>
-			<div class="keywords">
-					Amazon Web Services,
-					Heroku,
-					CentOS,
-					Ubuntu,
-					Windows Server,
-					Nginx,
-					CouchDB,
-					DynamoDB
-			</div>
-		</div>
-		<div class="item">
-			<div class="name">
-				Tools
-			</div>
-			<div class="keywords">
-					Git,
-					Subversion,
-					Bash,
-					PowerShell,
-					Vagrant,
-					Graphite,
-					Jenkins,
-					Rundeck,
-					Zenoss
-			</div>
-		</div>
-	</section>
-
-	<section class="experience">
-		<h2>Experience</h2>
-		<section class="item">
-			<header>
-					<h3 class="name">Grosvenor Capitol Management</h3>
-			</header>
-			<span class="position">
-				Associate
-			</span>
-
-			<span class="startDate">
-				Jan 2015
-			</span>
-			<span class="endDate">
-				- Aug 2015
-			</span>
-
-			<div class="summary">
-				<p>Collaborated with development and operations teams to build automation and improve cloud infrastructure utilization</p>
-			</div>
-			<ul class="highlights">
-				<li>Prototyped AWS DynamoDB as a more cost effective alternative to managed NoSQL databases</li>
-				<li>Developed Chef cookbooks to automate the installation and configuration of IIS and ASP.NET MVC applications</li>
-				<li>Using Sinatra and ruby-net-ldap, built an API and an accompanying CLI for managing Windows services on over 900 machines</li>
-				<li>Wrote PowerShell scripts to automate monitoring configuration changes through Zenoss’ API</li>
-				<li>Using the AWS Ruby SDK, built a CLI application to automate backups and tagging of EC2 instances</li>
-			</ul>
-		</section>
-		<section class="item">
-			<header>
-					<h3 class="name">Pearson</h3>
-			</header>
-			<span class="position">
-				Software Developer
-			</span>
-
-			<span class="startDate">
-				Jul 2013
-			</span>
-			<span class="endDate">
-				- Jan 2015
-			</span>
-
-			<div class="summary">
-				<p>Built automation as part of a team that led a large software development organization into a DevOps model</p>
-			</div>
-			<ul class="highlights">
-				<li>Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, and MySQL</li>
-				<li>Built automation using the AWS Ruby SDK to delete unitilized EC2 instances, EBS volumes, and ELBs</li>
-				<li>Using Chef and the AWS Ruby SDK, lead the development of a CLI tool to automate the provisioning, maintenance, reporting, and decomissioning of entire AWS enviornments conisting of over 1500 EC2 instances</li>
-				<li>Developed automation using the AWS Ruby SDK to enforce multi-factor authentication and API key rotation for AWS accounts</li>
-				<li>Developed automation using the AWS Ruby SDK to track and alert on AWS service usage limits</li>
-				<li>Built real-time dashboards using Graphite, Grafana, Dashing, and Rundeck to visualize metrics from Jenkins CI pipelines, AWS, and Chef</li>
-			</ul>
-		</section>
-		<section class="item">
-			<header>
-					<h3 class="name">Virtual Soldier Research</h3>
-			</header>
-			<span class="position">
-				Undergraduate Research Assistant
-			</span>
-
-			<span class="startDate">
-				Nov 2011
-			</span>
-			<span class="endDate">
-				- May 2013
-			</span>
-
-			<div class="summary">
-				<p>Collaborated with a multidisciplinary research team developing Santos, a high fidelity digital human modeling tool</p>
-			</div>
-			<ul class="highlights">
-				<li>Developed algorithms for calcuating joint torques based on data from biomechanical research</li>
-				<li>Built GUIs for interacting with and visualizing data within Santos</li>
-				<li>Assisted in teaching a graduate course in predictive human modeling</li>
-				<li>Taught VSR’s class to train interns in C++, the DH convention, forward/inverse kinematics, optimization methods, GUI development</li>
-			</ul>
-		</section>
-		<section class="item">
-			<header>
-					<h3 class="name">Sebesta Blomberg</h3>
-			</header>
-			<span class="position">
-				Engineering Intern
-			</span>
-
-			<span class="startDate">
-				Oct 2010
-			</span>
-			<span class="endDate">
-				- Dec 2010
-			</span>
-
-			<div class="summary">
-				<p>Conducted field verification and contributed to an engineering team to assist in the process of electrical systems commissioning</p>
-			</div>
-			<ul class="highlights">
-				<li>Documented occupancy sensors, lighting fixtures, and electrical ballasts of 11 campus buildings in Iowa City</li>
-				<li>Maintained communication with maintenance staff, management, and other project team members</li>
-			</ul>
-		</section>
-	</section>
-
-	
-	<section id="education">
-		<h2>Education</h2>
-		<div class="item">
-			<header>
-					<h3 class="name">University of Iowa</h3>
-			</header>
-
-			<div class="dates">
-				<span class="startDate">
-					Aug 2008
-				</span>
-				<span class="endDate">
-					- May 2013
-				</span>
-			</div>
-
-			<div class="qualification">
-				<span class="studyType">
-					BSE
-				</span>
-
-				<span class="area">
-					- Electrial Engineering
-				</span>
-
-			</div>
-
-		</div>
-	</section>
-	
-	
 
 
 
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
-
-
-	</div>
-	
-	<script type="text/javascript">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+  <script type="text/javascript">
 /* <![CDATA[ */
 (function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
 /* ]]> */
