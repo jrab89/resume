@@ -29,6 +29,21 @@
   },
   "work": [
     {
+      "company": "Grosvenor Capitol Management",
+      "position": "Associate",
+      "website": "http://www.gcmlp.com/",
+      "startDate": "2015-01-26",
+      "endDate": "2015-08-14",
+      "summary": "Collaborated with development and operations teams to build automation and improve cloud infrastructure utilization",
+      "highlights": [
+        "Prototyped AWS DynamoDB as a more cost effective alternative to managed NoSQL databases",
+        "Developed Chef cookbooks to automate the installation and configuration of IIS and ASP.NET MVC applications",
+        "Using Sinatra and ruby-net-ldap, built an API and an accompanying CLI for managing Windows services on over 900 machines",
+        "Wrote PowerShell scripts to automate monitoring configuration changes through Zenoss’ API",
+        "Using the AWS Ruby SDK, built a CLI application to automate backups and tagging of EC2 instances"
+      ]
+    },
+    {
       "company": "Pearson",
       "position": "Software Developer",
       "website": "http://www.pearson.com/",
@@ -36,7 +51,7 @@
       "endDate": "2015-01-01",
       "summary": "Built automation as part of a team that led a large software development organization into a DevOps model",
       "highlights": [
-        "Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, and MySQL clusters",
+        "Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, and MySQL",
         "Built automation using the AWS Ruby SDK to delete unitilized EC2 instances, EBS volumes, and ELBs",
         "Using Chef and the AWS Ruby SDK, lead the development of a CLI tool to automate the provisioning, maintenance, reporting, and decomissioning of entire AWS enviornments conisting of over 1500 EC2 instances",
         "Developed automation using the AWS Ruby SDK to enforce multi-factor authentication and API key rotation for AWS accounts",
@@ -52,7 +67,7 @@
       "endDate": "2013-05-01",
       "summary": "Collaborated with a multidisciplinary research team developing Santos, a high fidelity digital human modeling tool",
       "highlights": [
-        "Developed software for calcuating joint torques based on data from biomechanical research",
+        "Developed algorithms for calcuating joint torques based on data from biomechanical research",
         "Built GUIs for interacting with and visualizing data within Santos",
         "Assisted in teaching a graduate course in predictive human modeling",
         "Taught VSR’s class to train interns in C++, the DH convention, forward/inverse kinematics, optimization methods, GUI development"
@@ -120,8 +135,8 @@
         "Ubuntu",
         "Windows Server",
         "Nginx",
-        "Elasticsearch",
-        "CouchDB"
+        "CouchDB",
+        "DynamoDB"
       ]
     },
     {
@@ -130,15 +145,13 @@
       "keywords": [
         "Git",
         "Subversion",
-        "Visual Studio",
-        "Eclipse",
-        "Sublime Text",
         "Bash",
         "PowerShell",
         "Vagrant",
         "Graphite",
         "Jenkins",
-        "Rundeck"
+        "Rundeck",
+        "Zenoss"
       ]
     }
   ],
