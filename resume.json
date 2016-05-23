@@ -6,7 +6,7 @@
     "email": "jrab89@gmail.com",
     "phone": "",
     "website": "http://jrab89.github.io",
-    "summary": "I've been interested in building software since I was a teenager and have been doing so professionally since 2011. I studied Electrical Engineering at the University of Iowa, where I also ended up with minors in Math and Computer Science. I was really interested in microcontrollers, but since then I've mostly been doing other stuff. I enjoy reading about and experimenting with technology!",
+    "summary": "I've been interested in building software since I was in high school and have been doing so professionally since 2011. I studied Electrical Engineering at the University of Iowa, where I also ended up with minors in Math and Computer Science. In school I was interested in microcontrollers and embedded systems, but since then I've mostly been writing server-side code. I enjoy reading about and experimenting with technology!",
     "location": {
       "address": "1555 N Dearborn",
       "postalCode": "60610",
@@ -52,8 +52,8 @@
       "summary": "Built automation as part of a team that led a large software development organization into a DevOps model",
       "highlights": [
         "Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, and MySQL",
-        "Built automation using the AWS Ruby SDK to delete unitilized EC2 instances, EBS volumes, and ELBs",
-        "Using Chef and the AWS Ruby SDK, lead the development of a CLI tool to automate the provisioning, maintenance, reporting, and decomissioning of entire AWS enviornments conisting of over 1500 EC2 instances",
+        "Built automation using the AWS Ruby SDK to delete unutilized EC2 instances, EBS volumes, and ELBs",
+        "Using Chef and the AWS Ruby SDK, lead the development of a CLI tool to automate the provisioning, maintenance, reporting, and decommissioning of entire AWS environments consisting of over 1500 total EC2 instances",
         "Developed automation using the AWS Ruby SDK to enforce multi-factor authentication and API key rotation for AWS accounts",
         "Developed automation using the AWS Ruby SDK to track and alert on AWS service usage limits",
         "Built real-time dashboards using Graphite, Grafana, Dashing, and Rundeck to visualize metrics from Jenkins CI pipelines, AWS, and Chef"
@@ -90,7 +90,7 @@
   "education": [
     {
       "institution": "University of Iowa",
-      "area": "Electrial Engineering",
+      "area": "Electrical Engineering",
       "studyType": "BSE",
       "startDate": "2008-08-01",
       "endDate": "2013-05-01",
