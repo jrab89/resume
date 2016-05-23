@@ -36,11 +36,11 @@
       "endDate": "2015-08-14",
       "summary": "Collaborated with development and operations teams to build automation and improve cloud infrastructure utilization",
       "highlights": [
-        "Prototyped AWS DynamoDB as a more cost effective alternative to managed NoSQL databases",
+        "Prototyped AWS DynamoDB as a more cost effective alternative to non-managed NoSQL databases",
         "Developed Chef cookbooks to automate the installation and configuration of IIS and ASP.NET MVC applications",
-        "Using Sinatra and ruby-net-ldap, built an API and an accompanying CLI for managing Windows services on over 900 machines",
+        "Using Sinatra, ruby-net-ldap, and Thor, built an API and an accompanying CLI for managing Windows services on over 900 machines",
         "Wrote PowerShell scripts to automate monitoring configuration changes through Zenoss’ API",
-        "Using the AWS Ruby SDK, built a CLI application to automate backups and tagging of EC2 instances"
+        "Using the AWS Ruby SDK and Thor, built a CLI application to automate backups and tagging of EC2 instances"
       ]
     },
     {
@@ -61,16 +61,16 @@
     },
     {
       "company": "Virtual Soldier Research",
-      "position": "Undergraduate Research Assistant",
+      "position": "Research Assistant",
       "website": "http://www.ccad.uiowa.edu/vsr",
       "startDate": "2011-11-01",
       "endDate": "2013-05-01",
-      "summary": "Collaborated with a multidisciplinary research team developing Santos, a high fidelity digital human modeling tool",
+      "summary": "Collaborated with a multidisciplinary research team developing Santos, a predictive human modeling tool",
       "highlights": [
-        "Developed algorithms for calcuating joint torques based on data from biomechanical research",
-        "Built GUIs for interacting with and visualizing data within Santos",
+        "Implemented algorithms with C++ for calculating joint torques based on data from biomechanical research",
+        "Built GUIs for interacting with and visualizing data within Santos using C# and Windows Forms",
         "Assisted in teaching a graduate course in predictive human modeling",
-        "Taught VSR’s class to train interns in C++, the DH convention, forward/inverse kinematics, optimization methods, GUI development"
+        "Lead training of interns in C++, forward/inverse kinematics, optimization methods, and the Virtools 3D library"
       ]
     },
     {
@@ -79,10 +79,9 @@
       "website": "http://sebesta.com/",
       "startDate": "2010-10-01",
       "endDate": "2010-12-01",
-      "summary": "Conducted field verification and contributed to an engineering team to assist in the process of electrical systems commissioning",
+      "summary": "Conducted field verification and assisted in electrical systems commissioning",
       "highlights": [
-        "Documented occupancy sensors, lighting fixtures, and electrical ballasts of 11 campus buildings in Iowa City",
-        "Maintained communication with maintenance staff, management, and other project team members"
+        "Documented occupancy sensors, lighting fixtures, and electrical ballasts of 11 campus buildings in Iowa City"
       ]
     }
   ],
@@ -106,52 +105,39 @@
       "level": "",
       "keywords": [
         "C",
-        "C++",
+        "Go",
         "Java",
-        "C#",
         "JavaScript",
-        "Ruby",
-        "Go"
+        "Ruby"
       ]
     },
     {
       "name": "Frameworks",
       "level": "",
       "keywords": [
-        "Ruby on Rails",
+        "Ansible",
         "Chef",
-        "Sinatra",
-        "AngularJS",
-        "Bootstrap"
+        "Ruby on Rails",
+        "Sinatra"
       ]
     },
     {
-      "name": "Technologies",
+      "name": "Tools and Technologies",
       "level": "",
       "keywords": [
         "Amazon Web Services",
-        "Heroku",
-        "CentOS",
-        "Ubuntu",
-        "Windows Server",
-        "Nginx",
-        "CouchDB",
-        "DynamoDB"
-      ]
-    },
-    {
-      "name": "Tools",
-      "level": "",
-      "keywords": [
-        "Git",
-        "Subversion",
         "Bash",
-        "PowerShell",
-        "Vagrant",
-        "Graphite",
+        "CouchDB",
+        "Docker",
+        "DynamoDB",
+        "Git",
+        "HAProxy",
+        "Heroku",
         "Jenkins",
-        "Rundeck",
-        "Zenoss"
+        "Nginx",
+        "PowerShell",
+        "Subversion",
+        "Vagrant"
       ]
     }
   ],
