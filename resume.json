@@ -8,8 +8,6 @@
     "website": "http://jrab89.github.io",
     "summary": "I've been interested in building software since I was in high school and have been doing so professionally since 2011. I studied Electrical Engineering at the University of Iowa, where I also ended up with minors in Math and Computer Science. In school I was interested in microcontrollers and embedded systems, but since then I've mostly been writing server-side code. I enjoy reading about and experimenting with technology!",
     "location": {
-      "address": "1555 N Dearborn",
-      "postalCode": "60610",
       "city": "Chicago",
       "countryCode": "US",
       "region": "IL"
@@ -28,6 +26,22 @@
     ]
   },
   "work": [
+    {
+      "company": "Jellyvision",
+      "position": "DevOps Engineer",
+      "website": "http://www.jellyvision.com/",
+      "startDate": "2015-08-17",
+      "summary": " Operated and built tooling for scalable cloud-based web platforms",
+      "highlights": [
+        "Built automation to scale down the legacy V7 Alex platform, saving over $12,000 monthly",
+        "Developed a feature to retrieve and archive Jenkins build logs to S3 from within the Portal, an internal Rails/ReactJS application allowing for non-technical users to build and deploy content",
+        "Built a Portal feature to allow users to manage signed URLs for V8 Alex conversations",
+        "Lead the migration of the Portal from legacy Ansible playbooks to AWS Elastic Beanstalk, allowing for automated zero-downtime deployments",
+        "Wrote Jellyvision's first open source ruby gem: leeroy_jenkins, a CLI tool for managing Jenkins job configurations",
+        "Using Ansible and Terraform, setup an internal RubyGems server",
+        "Setup split-horizon DNS for internal services within Jellyvision's VPC, allowing for controlled access from external networks"
+      ]
+    },
     {
       "company": "Grosvenor Capitol Management",
       "position": "Associate",
@@ -117,6 +131,7 @@
       "keywords": [
         "Ansible",
         "Chef",
+        "ReactJS",
         "Ruby on Rails",
         "Sinatra"
       ]
@@ -128,15 +143,22 @@
         "Amazon Web Services",
         "Bash",
         "CouchDB",
+        "Cucumber",
         "Docker",
         "DynamoDB",
+        "Elastic Beanstalk",
         "Git",
         "HAProxy",
         "Heroku",
         "Jenkins",
+        "Maven",
         "Nginx",
+        "Nomad",
+        "Packer",
         "PowerShell",
+        "Redis",
         "Subversion",
+        "Terraform",
         "Vagrant"
       ]
     }
