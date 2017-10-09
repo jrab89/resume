@@ -5,8 +5,8 @@
     "picture": "http://jrab89.github.io/resume/Jeff_Rabovsky.jpg",
     "email": "jrab89@gmail.com",
     "phone": "",
-    "website": "http://jrab89.github.io",
-    "summary": "I've been interested in building software since I was in high school and have been doing so professionally since 2011. I studied Electrical Engineering at the University of Iowa, where I also ended up with minors in Math and Computer Science. In school I was interested in microcontrollers and embedded systems, but since then I've mostly been writing server-side code. I enjoy reading about and experimenting with technology!",
+    "website": "http://jrab89.github.io/resume",
+    "summary": "I love building software and have been doing so professionally since 2011. I studied Electrical Engineering at the University of Iowa, where I also ended up with minors in Math and Computer Science. In school I was interested in microcontrollers and embedded systems, but since then I've been focused on building reliable and scalabe backend systems.",
     "location": {
       "city": "Chicago",
       "countryCode": "US",
@@ -25,21 +25,33 @@
       }
     ]
   },
-  "work": [
+    "work": [
+    {
+      "company": "Grubhub",
+      "position": "Site Reliability Engineer",
+      "website": "https://www.grubhub.com",
+      "startDate": "2016-09-06",
+      "summary": "Lead development teams in ensuring application scalability, performance, and availability",
+      "highlights": [
+        "Built and maintained monitoring, alerting, and deployment automation for three software development teams",
+        "Developed a tool for administering the access of internal tools to more than 2000 Customer Care Agents and Delivery Operations Specialists",
+        "Added functionality to Garçon CLI, a Python tool built on top of the Cement Framework, allowing for System Administrators to perform high-level operations on the Orders and Customer Care APIs",
+        "Lead the integration of Amazon Aurora and S3 with Care-Metrics, a system for recording and displaying real-time metrics from Grubhub's customer care CRM",
+        "Contributed to the development of a CherryPy UI for displaying microservice configuration, routing, and authorization"
+      ]
+    },
     {
       "company": "Jellyvision",
       "position": "DevOps Engineer",
       "website": "http://www.jellyvision.com/",
       "startDate": "2015-08-17",
-      "summary": " Operated and built tooling for scalable cloud-based web platforms",
+      "summary": "Operated and built tooling for scalable cloud-based web platforms",
       "highlights": [
         "Built automation to scale down the legacy V7 Alex platform, saving over $12,000 monthly",
-        "Developed a feature to retrieve and archive Jenkins build logs to S3 from within the Portal, an internal Rails/ReactJS application allowing for non-technical users to build and deploy content",
-        "Built a Portal feature to allow users to manage signed URLs for V8 Alex conversations",
-        "Lead the migration of the Portal from legacy Ansible playbooks to AWS Elastic Beanstalk, allowing for automated zero-downtime deployments",
+        "Developed features for the V8 Portal, an internal Rails/ReactJS application allowing for non-technical users to build and deploy content",
+        "Lead the migration of the V8 Portal from legacy Ansible playbooks to AWS Elastic Beanstalk, allowing for automated zero-downtime deployments",
         "Wrote Jellyvision's first open source ruby gem: leeroy_jenkins, a CLI tool for managing Jenkins job configurations",
-        "Using Ansible and Terraform, setup an internal RubyGems server",
-        "Setup split-horizon DNS for internal services within Jellyvision's VPC, allowing for controlled access from external networks"
+        "Built and maintained Jellyvision's internal RubyGems server"
       ]
     },
     {
@@ -52,7 +64,7 @@
       "highlights": [
         "Prototyped AWS DynamoDB as a more cost effective alternative to non-managed NoSQL databases",
         "Developed Chef cookbooks to automate the installation and configuration of IIS and ASP.NET MVC applications",
-        "Using Sinatra, ruby-net-ldap, and Thor, built an API and an accompanying CLI for managing Windows services on over 900 machines",
+        "Built a Ruby on Rails application for managing Windows services on over 900 machines",
         "Wrote PowerShell scripts to automate monitoring configuration changes through Zenoss’ API",
         "Using the AWS Ruby SDK and Thor, built a CLI application to automate backups and tagging of EC2 instances"
       ]
@@ -66,16 +78,14 @@
       "summary": "Built automation as part of a team that led a large software development organization into a DevOps model",
       "highlights": [
         "Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, and MySQL",
-        "Built automation using the AWS Ruby SDK to delete unutilized EC2 instances, EBS volumes, and ELBs",
+        "Built automation, using the AWS Ruby SDK, to delete unutilized EC2 instances, EBS volumes, and ELBs",
         "Using Chef and the AWS Ruby SDK, lead the development of a CLI tool to automate the provisioning, maintenance, reporting, and decommissioning of entire AWS environments consisting of over 1500 total EC2 instances",
-        "Developed automation using the AWS Ruby SDK to enforce multi-factor authentication and API key rotation for AWS accounts",
-        "Developed automation using the AWS Ruby SDK to track and alert on AWS service usage limits",
-        "Built real-time dashboards using Graphite, Grafana, Dashing, and Rundeck to visualize metrics from Jenkins CI pipelines, AWS, and Chef"
+        "Developed a tool, using the AWS Ruby SDK, to enforce multi-factor authentication, to enforce API key rotation, and to monitor service usage limits of AWS accounts"
       ]
     },
     {
       "company": "Virtual Soldier Research",
-      "position": "Research Assistant",
+      "position": "Software Engineering Intern",
       "website": "http://www.ccad.uiowa.edu/vsr",
       "startDate": "2011-11-01",
       "endDate": "2013-05-01",
@@ -89,13 +99,13 @@
     },
     {
       "company": "Sebesta Blomberg",
-      "position": "Engineering Intern",
+      "position": "Electrical Engineering Intern",
       "website": "http://sebesta.com/",
       "startDate": "2010-10-01",
       "endDate": "2010-12-01",
       "summary": "Conducted field verification and assisted in electrical systems commissioning",
       "highlights": [
-        "Documented occupancy sensors, lighting fixtures, and electrical ballasts of 11 campus buildings in Iowa City"
+        "Documented occupancy sensors, lighting fixtures, and electrical ballasts of 11 buildings in downtown Iowa City"
       ]
     }
   ],
@@ -122,42 +132,29 @@
         "Go",
         "Java",
         "JavaScript",
-        "Ruby"
+        "Ruby",
+        "Python"
       ]
     },
     {
-      "name": "Frameworks",
-      "level": "",
-      "keywords": [
-        "Ansible",
-        "Chef",
-        "ReactJS",
-        "Ruby on Rails",
-        "Sinatra"
-      ]
-    },
-    {
-      "name": "Tools and Technologies",
+      "name": "Frameworks, Technologies, and Tools",
       "level": "",
       "keywords": [
         "Amazon Web Services",
-        "Bash",
+        "Ansible",
+        "Cassandra",
+        "Chef",
         "CouchDB",
-        "Cucumber",
         "Docker",
-        "DynamoDB",
-        "Elastic Beanstalk",
         "Git",
         "HAProxy",
         "Heroku",
         "Jenkins",
-        "Maven",
+        "Linux",
+        "MySQL",
         "Nginx",
-        "Nomad",
-        "Packer",
-        "PowerShell",
-        "Redis",
-        "Subversion",
+        "Ruby on Rails",
+        "Sinatra",
         "Terraform",
         "Vagrant"
       ]
