@@ -1,4 +1,4 @@
 ```bash
-npm install -g resume-cli
-resume export resume.html --theme Shorter
+$ npm install
+$ node_modules/.bin/resume export resume.html --theme jsonresume-theme-elegant
 ```

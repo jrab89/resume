@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Jeffrey Rabovsky",
+    "name": "Jeff Rabovsky",
     "label": "Software Engineer",
-    "picture": "http://jrab89.github.io/resume/Jeff_Rabovsky.jpg",
+    "picture": "https://jrab89.github.io/resume/full_linkedin_pic.png",
     "email": "jrab89@gmail.com",
     "phone": "",
-    "website": "",
-    "summary": "I love building software and have been doing so professionally since 2011. I studied Electrical Engineering at the University of Iowa, where I also ended up with minors in Math and Computer Science. In school I was interested in microcontrollers and embedded systems, but since then I've been focused on building reliable and scalable backend systems.",
+    "website": "https://jrab89.github.io",
+    "summary": "I'm passionate about building software and have been doing so professionally for over a decade. I studied Electrical Engineering at the University of Iowa, where I also ended up with minors in Math and Computer Science. In school I was interested in microcontrollers and embedded systems, but since then I've been focused on building reliable and scalable backend systems. I'm working on my master's degree part-time in Computer Science at the University of Illinois Chicago.",
     "location": {
       "city": "Chicago",
       "countryCode": "US",
@@ -16,24 +16,52 @@
       {
         "network": "GitHub",
         "username": "jrab89",
-        "url": "http://github.com/jrab89"
+        "url": "https://github.com/jrab89"
       },
       {
         "network": "LinkedIn",
-        "username": "Jeffrey Rabovsky",
-        "url": "http://www.linkedin.com/pub/jeffrey-rabovsky/5a/3b7/59"
+        "username": "Jeff Rabovsky",
+        "url": "https://www.linkedin.com/in/jeff-rabovsky-0593b75a/"
       }
     ]
   },
     "work": [
     {
-      "company": "Grubhub",
+      "name": "Basis Technologies",
+      "position": "Senior DevOps Engineer",
+      "url": "https://basis.net/",
+      "startDate": "2018-06-01",
+      "summary": "Part of a small team responsible for Basis's AWS application infrastructure",
+      "highlights": [
+        "Built a Python application, utilizing https://kustomize.io, to manage environments for different applications in AWS EKS",
+        "Added features and fixed bugs in Marvin, Basis's Python chatbot for infrastructure self-service",
+        "Developed Docker image build process and Kustomization targets for Basis's monolithic Ruby on Rails application",
+        "Improved performance, security, and monitoring of Basis's Consul clusters",
+        "Lead migration of Bamboo from data center to AWS"
+      ]
+    },
+    {
+      "name": "Avant",
+      "position": "Software Engineer",
+      "url": "https://www.avant.com/",
+      "startDate": "2018-01-01",
+      "endDate": "2018-06-01",
+      "summary": "As part of the payments processing engineering team, added features, fixed bugs, and wrote automated tests within Avant's Ruby on Rails monolith and other smaller applications",
+      "highlights": [
+        "Built a role-based access control system for Templateflow, Avant's multi-tenant application for generating emails, contracts, and other documents",
+        "Implemented API authentication for Templateflow",
+        "Built a feature to send physical letters to past due customers, utilizing APIs from https://lob.com/"
+      ]
+    },
+    {
+      "name": "Grubhub",
       "position": "Site Reliability Engineer",
-      "website": "https://www.grubhub.com",
+      "url": "https://www.grubhub.com",
       "startDate": "2016-09-06",
+      "endDate": "2018-01-01",
       "summary": "Lead development teams in ensuring application scalability, performance, and availability",
       "highlights": [
-        "Built and maintained monitoring, alerting, and deployment automation for three software development teams",
+        "Built and maintained monitoring, alerting, and deployment systems for three software development teams",
         "Developed a tool for administering the access of internal tools to more than 2000 Customer Care Agents and Delivery Operations Specialists",
         "Added functionality to Garçon CLI, a Python tool built on top of the Cement Framework, allowing for System Administrators to perform high-level operations on the Orders and Customer Care APIs",
         "Lead the integration of Amazon Aurora and S3 with Care-Metrics, a system for recording and displaying real-time metrics from Grubhub's customer care CRM",
@@ -41,9 +69,9 @@
       ]
     },
     {
-      "company": "Jellyvision",
+      "name": "Jellyvision",
       "position": "DevOps Engineer",
-      "website": "http://www.jellyvision.com/",
+      "url": "https://www.jellyvision.com/",
       "startDate": "2015-08-17",
       "endDate": "2016-09-02",
       "summary": "Operated and built tooling for scalable cloud-based web platforms",
@@ -56,14 +84,14 @@
       ]
     },
     {
-      "company": "Grosvenor Capitol Management",
+      "name": "Grosvenor Capitol Management",
       "position": "Associate",
-      "website": "http://www.gcmlp.com/",
+      "url": "https://www.gcmgrosvenor.com/",
       "startDate": "2015-01-26",
       "endDate": "2015-08-14",
       "summary": "Collaborated with development and operations teams to build automation and improve cloud infrastructure utilization",
       "highlights": [
-        "Prototyped AWS DynamoDB as a more cost effective alternative to non-managed NoSQL databases",
+        "Built proof of concept utilizing AWS DynamoDB as a more cost effective alternative to non-managed NoSQL databases",
         "Developed Chef cookbooks to automate the installation and configuration of IIS and ASP.NET MVC applications",
         "Built a Ruby on Rails application for managing Windows services on over 900 machines",
         "Wrote PowerShell scripts to automate monitoring configuration changes through Zenoss’ API",
@@ -71,23 +99,23 @@
       ]
     },
     {
-      "company": "Pearson",
+      "name": "Pearson",
       "position": "Software Developer",
-      "website": "http://www.pearson.com/",
+      "url": "https://www.pearson.com/",
       "startDate": "2013-07-01",
       "endDate": "2015-01-01",
       "summary": "Built automation as part of a team that led a large software development organization into a DevOps model",
       "highlights": [
         "Developed Chef cookbooks to automate the installation and configuration of collectd, Nginx, Elasticsearch, and MySQL",
-        "Built automation, using the AWS Ruby SDK, to delete unutilized EC2 instances, EBS volumes, and ELBs",
+        "Built automation, using the AWS Ruby SDK, to delete unused EC2 instances, EBS volumes, and ELBs",
         "Using Chef and the AWS Ruby SDK, lead the development of a CLI tool to automate the provisioning, maintenance, reporting, and decommissioning of entire AWS environments consisting of over 1500 total EC2 instances",
         "Developed a tool, using the AWS Ruby SDK, to enforce multi-factor authentication, to enforce API key rotation, and to monitor service usage limits of AWS accounts"
       ]
     },
     {
-      "company": "Virtual Soldier Research",
+      "name": "Virtual Soldier Research",
       "position": "Software Engineering Intern",
-      "website": "http://www.ccad.uiowa.edu/vsr",
+      "url": "http://www.ccad.uiowa.edu/vsr",
       "startDate": "2011-11-01",
       "endDate": "2013-05-01",
       "summary": "Collaborated with a multidisciplinary research team developing Santos, a predictive human modeling tool",
@@ -99,29 +127,19 @@
       ]
     },
     {
-      "company": "Sebesta Blomberg",
+      "name": "Sebesta Blomberg",
       "position": "Electrical Engineering Intern",
-      "website": "http://sebesta.com/",
+      "url": "https://sebesta.com/",
       "startDate": "2010-10-01",
       "endDate": "2010-12-01",
       "summary": "Conducted field verification and assisted in electrical systems commissioning",
       "highlights": [
-        "Documented occupancy sensors, lighting fixtures, and electrical ballasts of 11 buildings in downtown Iowa City"
+        "Documented occupancy sensors, lighting fixtures, and electrical ballasts of 11 buildings in Iowa City"
       ]
     }
   ],
   "volunteer": [],
-  "education": [
-    {
-      "institution": "University of Iowa",
-      "area": "Electrical Engineering",
-      "studyType": "BSE",
-      "startDate": "2008-08-01",
-      "endDate": "2013-05-01",
-      "gpa": "",
-      "courses": []
-    }
-  ],
+  "education": [],
   "awards": [],
   "publications": [],
   "skills": [
@@ -129,12 +147,11 @@
       "name": "Programming Languages",
       "level": "",
       "keywords": [
-        "C",
         "Go",
         "Java",
         "JavaScript",
-        "Ruby",
-        "Python"
+        "Python",
+        "Ruby"
       ]
     },
     {
@@ -143,21 +160,14 @@
       "keywords": [
         "Amazon Web Services",
         "Ansible",
-        "Cassandra",
         "Chef",
-        "CouchDB",
+        "Consul",
         "Docker",
-        "Git",
-        "HAProxy",
-        "Heroku",
-        "Jenkins",
+        "Kubernetes",
         "Linux",
-        "MySQL",
-        "Nginx",
         "Ruby on Rails",
-        "Sinatra",
-        "Terraform",
-        "Vagrant"
+        "Salt",
+        "Terraform"
       ]
     }
   ],
