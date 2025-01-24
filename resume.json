@@ -2,7 +2,7 @@
   "basics": {
     "name": "Jeff Rabovsky",
     "label": "Software Engineer",
-    "picture": "https://jrab89.github.io/resume/full_linkedin_pic.png",
+    "picture": "https://jrab89.github.io/resume/linkedin_picture.jpeg",
     "email": "jrab89@gmail.com",
     "phone": "",
     "website": "https://jrab89.github.io",
@@ -26,11 +26,25 @@
     ]
   },
     "work": [
+      {
+        "name": "IMC Trading",
+        "position": "Site Reliability Engineer",
+        "url": "https://imc.com",
+        "startDate": "2024-05-01",
+        "summary": "Built and maintained globally distributed tools and infrastructure",
+        "highlights": [
+          "Lead the development of a globally distrubted black-box monitoring system with configurable checks, alerting, and a UI. Used Python, Celery, Streamlit, Postgres, and Kubernetes",
+          "Built a Python command line application to scan dozens of Kubernetes clusters for violations of configurable rules",
+          "Developed a Python Cookiecutter project template and an accompanying Kotlin library that automated set up of TeamCity build configurations to lint, test, and publish artifacts to internal PyPI and Docker repositories",
+          "Improved host allocation reporting, better attributing utilization of over 6000 servers to different business units and trading desks"
+        ]
+      },
     {
       "name": "Basis Technologies",
       "position": "Senior DevOps Engineer",
       "url": "https://basis.net/",
       "startDate": "2018-06-01",
+      "endDate": "2023-05-01",
       "summary": "Part of a small team responsible for Basis's AWS application infrastructure",
       "highlights": [
         "Built a Python application, utilizing https://kustomize.io, to manage environments for different applications in AWS EKS",
@@ -151,7 +165,8 @@
         "Java",
         "JavaScript",
         "Python",
-        "Ruby"
+        "Ruby",
+        "SQL"
       ]
     },
     {
@@ -165,6 +180,7 @@
         "Docker",
         "Kubernetes",
         "Linux",
+        "Postgres",
         "Ruby on Rails",
         "Salt",
         "Terraform"
